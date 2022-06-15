@@ -11,8 +11,8 @@
 </head>
 
 
-<body style="height: 100vh" class=" w-100 d-flex">
-    <div id="login" class="m-auto d-flex flex-column">
+<body style="height: 100vh; background-color:#66adff" class=" w-100 d-flex">
+    <div id="login" class="m-auto d-flex flex-column bg-white rounded">
         <div class="">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-12">
@@ -57,7 +57,7 @@
                 <h3 class="text-center text-primary font-weight-bold">Easy Port - Cadastro</h3>
                 <div class="modal-body">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                        <form id="cadastrar-form" class="form" method="post" onsubmit="loginUser (this)">
                             <div class="form-group">
                                 <label for="login" class="text-primary font-weight-bold">Usuário</label><br>
                                 <input type="text" name="txt_login" id="txt_login" class="form-control">
@@ -90,7 +90,8 @@
         </div>
     </div>
 
-    <script src="/js/login.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/login.js"></script>
     <script>
 
         // Declara uma função para processar o formulário de login
@@ -105,7 +106,15 @@
             // Valida login e se estiver ok, redireciona para tela inicial da aplicação
             resultadoLogin = loginUser(username, password);
             if (resultadoLogin) {
-                window.location.href = '/painel_usuario/index.html';
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Registro inserido',
+                    showConfirmButton: false,
+                    timer: 1500,
+                    timerProgressBar: true
+                }).then(res => {
+                    window.location.href = 'painel_usuario/index.html';
+                })
             }
             else { // Se login falhou, avisa ao usuário
                 alert('Usuário ou senha incorretos');

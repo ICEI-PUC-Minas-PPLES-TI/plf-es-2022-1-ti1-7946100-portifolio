@@ -7,7 +7,7 @@
 
 
 // Página inicial de Login
-const LOGIN_URL = "login.html";
+const LOGIN_URL = "../login.html";
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};
@@ -89,13 +89,12 @@ function loginUser (login, senha) {
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
             usuarioCorrente.nome = usuario.nome;
-            alert('Bem vindo!');
-            
-            // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
+                        
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
 
             // Retorna true para usuário encontrado
             return true;
+            // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
         }
     }
 
