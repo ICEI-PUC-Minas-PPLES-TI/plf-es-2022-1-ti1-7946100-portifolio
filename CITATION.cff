@@ -1,0 +1,33 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Desenvolvimento de Portfólio para iniciantes
+authors:
+  - family-names: Henrique Araújo Santos
+    given-names: Arthur
+  - family-names: Fernandes Ferreira Silva
+    given-names: Davi
+  - family-names: Christian Pereira
+    given-names: Eddie 
+  - family-names: Jácome Magalhães de Jesus
+    given-names: Lucas 
+  - family-names: Silva Pinheiro
+    given-names: Lucas 
+  - family-names: Andrade Bernardes
+    given-names: Rayan
+  - family-names: Ferreira de Almeida
+    given-names: Victor
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amalia
+keywords:
+  - apresentação
+  - negócios
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-portifolio
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14
